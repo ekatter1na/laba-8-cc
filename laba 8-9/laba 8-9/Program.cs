@@ -1,12 +1,12 @@
-﻿namespace laba_8_9
+﻿namespace laba_8
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Massiv<int> intArray = new Massiv<int>(new int[] { 1, 2, 3 });
-            Massiv<string> stringArray = new Massiv<string>(new string[] { "my", "cat", "азарник"});
-            Massiv<double> doubleArray = new Massiv<double>(new double[] { 3.4, 300.333, 789.00044 });
+            Massiv<string> stringArray = new Massiv<string>(new string[] { "my", "fibi", "glouton"});
+            Massiv<double> doubleArray = new Massiv<double>(new double[] { 23.65, 34.968, 5685.945845 });
 
             intArray.dobavit(4);
             intArray.delete(3);
@@ -17,11 +17,11 @@
             Console.WriteLine(intArray.getLength());
 
             stringArray.dobavit("!");
-            stringArray.delete("азарник");
+            stringArray.delete("glouton");
             stringArray.print();
 
-            doubleArray.dobavit(8.9);
-            doubleArray.delete(300.333);
+            doubleArray.dobavit(45.32);
+            doubleArray.delete(34.968);
             doubleArray.print();
         }
     }
